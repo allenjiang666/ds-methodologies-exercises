@@ -16,7 +16,7 @@ def get_data(table_name):
 def save_flies(table_name: str):
     get_data(table_name).to_csv(table_name + '.csv')
     
-def get_sales_info():
+def get_store_data():
     items = pd.read_csv('items.csv', index_col= 0)
     stores = pd.read_csv('stores.csv', index_col= 0)
     sales = pd.read_csv('sales.csv', index_col= 0)
