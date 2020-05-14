@@ -19,8 +19,7 @@ def prepare_store_data():
     return df
 
 def prepare_ops_data():
-    ops =pd.read_csv('''https://raw.githubusercontent.com
-                     /jenfly/opsd/master/opsd_germany_daily.csv''')
+    ops =pd.read_csv('https://raw.githubusercontent.com/jenfly/opsd/master/opsd_germany_daily.csv')
     #onvert date column to datetime format
     ops['Date'] = pd.to_datetime(ops['Date'])
     #Set the index to be the datetime variable.
